@@ -1,0 +1,189 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8fd5e4;
+}
+
+.todo{
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "foto cabecera cabecera"
+    "botones container botonescontacto";
+}
+
+.foto img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+   
+}
+
+.foto {
+    grid-area: foto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+    width: 200px; 
+    height: 200px; 
+   
+    border: 2px solid rgb(15, 1, 1); 
+    overflow: hidden; 
+}
+
+.cabecera {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    grid-area: cabecera;
+    justify-items: center;
+    text-align: center;
+    padding: 8px; /* Ajusta el valor según el espacio deseado */
+    margin-right: 120px;
+}
+
+h1{
+    background-color: #040103;
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Ajusta el espacio entre el h1 y el .titulillo */
+
+}
+
+.titulillo{
+    background-color: #1f84009e;
+    padding: 2px;
+
+
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-area: botones;
+}
+
+.container{
+    grid-area: container;
+}
+
+.botonescontacto{
+   position: fixed;
+   bottom: 100px;
+   right:0;
+
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #080702;
+    padding: 10px 15px;
+    width: 200px; /* Ancho fijo para todos los botones */
+    box-sizing: border-box; /* Asegura que el ancho incluya el relleno */
+    background-color: #c4c4c4;
+    transition: background-color 0.3s ease;
+    padding:10px;
+
+}
+
+nav a:hover {
+    background-color: #6f16d4;
+    color: rgb(15, 3, 3);
+}
+
+section {
+    display: none;
+    margin: 0px;
+    color: #00000094;
+    
+    background-color: rgb(206, 234, 237);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(2, 2, 2, 0.1);
+}
+
+.primerenlace{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ultimoenlace{
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+section h4 {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+button {
+    display: block;
+    margin: 10px auto; /* Espacio entre botones en vertical */
+    padding: 10px 10px;
+    border: none;
+    background-color: #020a11;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6c07ba;
+}
+
+svg {
+    border: none;
+    cursor: pointer;
+    color: #3487bf;
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+    width: 25px; /* Ancho del icono */
+    height: 25px; /* Altura del icono */
+}
+
+svg:hover {
+    color: rgb(255, 255, 255); /* Color del icono al pasar el mouse */
+}
+
+.alert {
+    font-size: 50px;
+    padding: 10px;
+    background-color: #04064f;
+    color: white;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-bottom: 15px;
+    display: none;
+    grid-area: container;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #767272;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
