@@ -1,7 +1,10 @@
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    background-image:url('23751.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
     
 }
 
@@ -84,7 +87,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #6f16d4;
+    background-color: rgba(255, 217, 0, 0.623);
     color: rgb(15, 3, 3);
 }
 
@@ -93,7 +96,7 @@ section {
     margin: 0px;
     color: #00000094;
     
-    background-color: rgb(206, 234, 237);
+    background-color:goldenrod;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(2, 2, 2, 0.1);
@@ -169,4 +172,35 @@ svg:hover {
   .closebtn:hover {
     color: black;
   }
+  footer{
+    background-color:grey;
+    color: #080702;
+    font-size: small;
+    text-align: center;
+  }
+  @media print {
+    .printbutton {
+      display: none;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .todo{
+        display: block;
+        width: 80%;
+    }
+    nav a{
+        display: none;
+    }
+    .cabecera{
+        size-adjust: 20%;
+    }
+    .botonescontacto{
+        position: inherit;
+        top:0;
+        right: 0;
+    }
+  }
+
 
